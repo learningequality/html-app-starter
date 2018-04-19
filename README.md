@@ -24,11 +24,12 @@ File structure:
 - `img/`: Place images here.
 - `fonts/`: Place fonts here.
 
-## Sample HTML code
+## Test it out
 
 Try placing the following HTML code into `index.html`:
 
 ```
+<img src="img/kolibri.png" height="80">
 <h1>Install Kolibri</h1>
 <p>
   See the <a href="https://learningequality.org/r/kolibri-changes">Kolibri changelog here</a>. Documentation for <a href="https://readthedocs.org/projects/kolibri/">other versions are available here</a>.
@@ -53,6 +54,13 @@ Try placing the following HTML code into `index.html`:
   <li><strong>Android: not yet supported</strong></li>
   <li><strong>iOS: not yet supported</strong></li>
 </ul>
-
 <button>I am a button!!! Click me!!</button>
 ```
+
+... and then run the following in this repository's directory to start a server:
+
+```
+python -m SimpleHTTPServer
+```
+
+Now open http://localhost:8000/ in a browser and you should see your sample app!
