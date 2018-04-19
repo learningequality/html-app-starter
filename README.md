@@ -54,7 +54,7 @@ Try placing the following HTML code into `index.html`:
   <li><strong>Android: not yet supported</strong></li>
   <li><strong>iOS: not yet supported</strong></li>
 </ul>
-<button>I am a button!!! Click me!!</button>
+<button class="button">I am a button!!! Click me!!</button>
 ```
 
 ... and then run the following in this repository's directory to start a server:
