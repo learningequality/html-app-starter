@@ -11,18 +11,14 @@ File structure:
 │   └── styles.css
 ├── js
 │   └── scripts.js
-├── img
-│   └── kolibri.png
-└── fonts
-    ├── NotoSans-Bold.ttf
-    └── NotoSans-Regular.ttf
+└── img
+    └── kolibri.png
 ```
 
 - `index.html`: Place your HTML code here! This is where the main text body goes.
 - `css/styles.css`: Place your CSS code here! This is where styling (e.g. for fonts, spacing, colors, etc.) goes.
 - `js/scripts.js`: Place any JavaScript code here! This is where code for an interactive webapp would go -- logic, click handlers, animations, network requests, etc.
 - `img/`: Place images here.
-- `fonts/`: Place fonts here.
 
 ## Test it out
 
