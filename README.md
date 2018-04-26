@@ -60,3 +60,32 @@ python -m SimpleHTTPServer
 ```
 
 Now open http://localhost:8000/ in a browser and you should see your sample app!
+
+## Adding a sidebar
+
+If for some reason there's a list of navigation links that you'd like to put in a sidebar, try placing the following code, directly under the `<body>` tag:
+
+```
+<div class="sidebar">
+  <ul>
+    <li><a class="sidebar-link" href="#">Quick Look</a></li>
+    <li><a class="sidebar-link" href="#">Summary</a></li>
+    <li><a class="sidebar-link" href="#">Pre-Req Knowledge</a></li>
+    <li><a class="sidebar-link" href="#">Learning Objectives</a></li>
+    <li><a class="sidebar-link" href="#">More Like This</a></li>
+    <li><a class="sidebar-link" href="#">Introduction/Motivation</a></li>
+    <li><a class="sidebar-link" href="#">Background</a></li>
+  </ul>
+</div>
+<div class="main-content-with-sidebar">
+  <h1>Install Kolibri</h1>
+  <p>
+    See the <a href="https://learningequality.org/r/kolibri-changes">Kolibri changelog here</a>. Documentation for <a href="https://readthedocs.org/projects/kolibri/">other versions are available here</a>.
+  </p>
+  <p>
+    To install <strong>Kolibri</strong>, check the system requirements first and then follow the procedure for the operating system on your device.
+  </p>
+</div>
+```
+
+Before using this, consider first if it would make more sense to split these links out into individual content nodes, grouped under a single topic (and letting Kolibri handle the navigation).

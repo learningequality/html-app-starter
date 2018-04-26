@@ -4,24 +4,85 @@
  * modifications to styling and color scheme.
  */
 
+/* Layout and sidebar */
+
 body {
     background: white;
     color: #333;
     font-family: 'Noto Sans', NotoSans, sans-serif;
-    font-size: 19px;
     letter-spacing: .01em;
     line-height: 1.55;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content {
     margin: auto;
     max-width: 700px;
     padding: 24px;
+    font-size: 19px;
+}
+
+.main-content-with-sidebar {
+    max-width: 700px;
+    padding: 36px;
+    margin-left: 250px;
+    font-size: 17px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    background: #f7f7f7;
+    border-right: 1px solid #e0e0e0;
+    padding-top: 24px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .sidebar-link {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-link:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 @media screen and (max-width: 960px) {
     body {
-        padding: 16px;
         font-size: 16px;
     }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .main-content-with-sidebar {
+        margin: 0;
+        padding: 16px;
+    }
+
+    .sidebar {
+        box-sizing: border-box;
+        position: relative;
+        margin: 16px;
+        width: auto;
+        border: none;
+    }
 }
+
+/* Typography */
 
 h1 {
     font-size: 1.5em;
@@ -43,6 +104,8 @@ a {
     padding: 0;
     display: inline;
 }
+
+/* Elements */
 
 img {
     max-width: 100%;
