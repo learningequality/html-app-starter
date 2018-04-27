@@ -99,7 +99,7 @@ body {
 
     .sidebar .sidebar-items {
         max-height: 0;
-        transition: max-height 0.55s ease;
+        transition: max-height 0.4s ease;
     }
 
     .sidebar.visible .sidebar-items {
