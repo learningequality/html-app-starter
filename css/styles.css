@@ -59,6 +59,10 @@ body {
     background: rgba(0, 0, 0, 0.05);
 }
 
+.sidebar .toggle-sidebar-button {
+    display: none;
+}
+
 @media screen and (max-width: 960px) {
     body {
         font-size: 16px;
@@ -74,11 +78,32 @@ body {
     }
 
     .sidebar {
+        background: #f7f7f7;
         box-sizing: border-box;
         position: relative;
-        margin: 16px;
-        width: auto;
+        width: 100%;
         border: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+    }
+
+    .sidebar .sidebar-link:not(:first-child) {
+        display: none;
+    }
+
+    .sidebar .toggle-sidebar-button {
+        display: inline-block;
+    }
+
+    .sidebar .sidebar-items {
+        max-height: 0;
+        transition: max-height 0.55s ease;
+    }
+
+    .sidebar.visible .sidebar-items {
+        max-height: 1000px;
     }
 }
 

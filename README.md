@@ -67,6 +67,7 @@ If for some reason there's a list of navigation links that you'd like to put in 
 
 ```
 <div class="sidebar">
+  <a class="sidebar-link toggle-sidebar-button" href="javascript:void(0)" onclick="toggleNavMenu()">&#9776;</a>
   <ul>
     <li><a class="sidebar-link" href="#">Quick Look</a></li>
     <li><a class="sidebar-link" href="#">Summary</a></li>
