@@ -89,7 +89,7 @@ body {
         box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
     }
 
-    .sidebar .sidebar-link:not(:first-child) {
+    .sidebar .sidebar-items {
         display: none;
     }
 
@@ -103,7 +103,8 @@ body {
     }
 
     .sidebar.visible .sidebar-items {
-        max-height: 1000px;
+        max-height: 1200px;
+        display: block;
     }
 }
 
